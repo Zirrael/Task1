@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+  
+ * {
+    box-sizing: border-box;
+}
+  
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    &:before, &:after {
+      display: table;
+      content: " ";
+    }
+}
+  
+  @media (max-width: 449px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 450px) {
+    .container {
+      width: 420px;
+    }
+  }
+  
+  @media (min-width: 650px) {
+    .container {
+      width: 620px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+  }
+}
+
+.aqua {
+  color: #40E0D0;
+}
+.services__logo, .portfolio__logo, .about__logo, .contacts__logo {
+  width: 100%;
+  text-align: center;
+  height: 230px;
+}
+
+@media screen and (max-width: 990px){
+  .services__logo, .portfolio__logo, .about__logo, .contacts__logo {
+    width: 100%;
+    height: 150px;
+  }
+}
+// .translucent {
+//     font-size: 120px;
+//     font-weight: 900;
+//     opacity: 0.05;
+//     margin: 20px;
+//     letter-spacing: -6px;
+// }
+// .up {
+//     margin-top: -57px;
+//   }
