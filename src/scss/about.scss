@@ -1,0 +1,131 @@
+.about {
+    width: 100%; 
+    padding-bottom: 100px;
+    @media screen and (max-width: 992px){
+        padding-bottom: 10px;
+    }
+}
+
+.about__logo__paragraph{
+    &--big{
+    font-size: 120px;
+    font-weight: 900;
+    opacity: 0.05;
+    margin: 20px;
+    letter-spacing: -6px;
+    }
+    &--up{
+      margin-top: -57px;
+      font-weight: 400;
+      opacity: 0.7;
+    }
+  
+    @media screen and (max-width: 992px){
+      &--big{
+        font-size: 90px;
+      }
+      &--up{
+        font-size: 14px;
+        margin-top: -47px;
+      }
+    }
+    @media screen and (max-width: 650px){
+      &--big{
+        font-size: 60px;
+      }
+      &--up{
+        font-size: 10px;
+        margin-top: -40px;
+      }
+    }
+}
+
+.about__box{
+    display: flex;
+
+    @media screen and (max-width: 992px){
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
+.about__box__squares {
+    width: 50%;
+    position: relative;
+
+    @media screen and (max-width: 992px){
+        display:none;
+    }
+   
+}
+  
+.about__box__squares__photo {
+    width: 260px;
+    height: 300px;
+    background: #F5F5F5;
+    z-index: 1;
+    margin-left: 10px;
+    box-shadow: -1px 3px 2px rgba(0, 0, 0, 0.1);
+}
+  
+.about__box__squares__grey {
+    width: 90px;
+    height: 420px;
+    background: #FAFAFA;
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    top: -60px;
+}
+  
+.about__box__squares img {
+    transform: scale(0.9);
+}
+  
+.about__box__squares__img {
+    z-index: -2;
+    position: absolute;
+    left: 210px;
+    top: -40px;
+}
+  
+.about__box__text {
+    width: 50%;
+    @media screen and (max-width: 992px){
+        width: 75%;
+    }
+}
+
+.about__box__text__paragraph{
+    font-size: 10px;
+    font-weight: 400;
+    opacity: 0.7;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-top: 65px; 
+    &--big{
+        font-size: 14px;
+        font-weight: 900;
+        padding-top: 5px;
+        opacity: 0.8;
+        margin: 0;
+        padding-left: 20px;
+    }
+    &:before {
+        content: "";
+        height: 2px;
+        width: 185px;
+        background-color: #40E0D0;
+        position: absolute;
+        z-index: 1;
+    }
+    @media screen and (max-width: 650px){
+        font-size: 8px;
+        padding-top: 2px;
+        &--big{
+            font-size: 12px;
+            padding-top: 2px;
+        }
+    }
+}

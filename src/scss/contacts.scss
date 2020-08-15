@@ -1,0 +1,100 @@
+.contacts__wrapper {
+    background-color: $grey;
+}
+
+.contacts{
+    margin-bottom: 50px;
+}
+
+.contacts__logo__paragraph{
+    &--big{
+    font-size: 120px;
+    font-weight: 900;
+    opacity: 0.05;
+    margin: 20px;
+    letter-spacing: -6px;
+    }
+    &--up{
+        margin-top: -57px;
+        font-weight: 400;
+        opacity: 0.7;
+    }
+
+    @media screen and (max-width: 992px){
+      &--big{
+        font-size: 90px;
+      }
+      &--up{
+        font-size: 14px;
+        margin-top: -47px;
+      }
+    }
+
+    @media screen and (max-width: 650px){
+      &--big{
+        font-size: 60px;
+      }
+      &--up{
+        font-size: 10px;
+        margin-top: -40px;
+      }
+    }
+}
+
+.contacts__media {
+    margin-top: -40px;
+}
+
+.contacts__media__title {
+    font-size: 40px;
+    letter-spacing: -2px;
+    padding-left: 150px;
+    color: $blue;
+    opacity: 0.7;
+
+    @media screen and (max-width: 992px){
+        font-size: 20px;
+        padding: 15px 0px 0px 50px;
+    }
+
+    @media screen and (max-width: 650px){
+        font-size: 15px;
+    }
+}
+
+.contacts__media__mail {
+    font-size: 35px;
+    color: $aqua;
+    letter-spacing: -2px;
+    padding-left: 180px;
+    opacity: 0.7;
+
+    @media screen and (max-width: 992px){
+        font-size: 15px;
+        padding: 15px 0px 0px 50px;
+    }
+
+    @media screen and (max-width: 650px){
+        font-size: 12px;
+    }
+}
+
+.contacts__media__social {
+    font-size: 15px;
+    padding: 15px 0px 0px 220px;
+    opacity: 0.7;
+    color: $blue;
+
+    @media screen and (max-width: 992px){
+        font-size: 12px;
+        padding: 15px 0px 0px 50px;
+    }
+
+    @media screen and (max-width: 650px){
+        font-size: 10px;
+    }
+}
+
+.contacts__media__social__font{
+    padding: 0 10px;
+}

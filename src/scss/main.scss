@@ -6,71 +6,111 @@ body {
  * {
     box-sizing: border-box;
 }
-  
+
+/*screen sizes*/
+$xl-up: 1400px;
+$xl-down: 1399px;
+
+$lg-up: 1200px;
+$lg-down: 1199px;
+
+$md-up: 992px;
+$md-down: 991px;
+
+$sm-up: 768px;
+$sm-down: 767px;
+
+$xs-up: 650px;
+$xs-down: 649px;
+
+$xxs-up: 450px;
+$xxs-down: 449px;
+
 .container {
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  
-    &:before, &:after {
-      display: table;
-      content: " ";
-    }
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-  
-  @media (max-width: 449px) {
-    .container {
-      width: 100%;
+/*screen sizes*/
+$xl-up: 1400px;
+$xl-down: 1399px;
+
+$lg-up: 1200px;
+$lg-down: 1199px;
+
+$md-up: 992px;
+$md-down: 991px;
+
+$sm-up: 768px;
+$sm-down: 767px;
+
+$xs-up: 650px;
+$xs-down: 649px;
+
+$xxs-up: 450px;
+$xxs-down: 449px;
+
+/*container sizes*/
+$lg-container: 1170px;
+$md-container: 970px;
+$sm-container: 750px;
+
+$aqua:#40E0D0;
+$grey:#fafafa;
+$blue:#2C4755;
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $sm-up) {
+    width: $sm-container;
+  }
+
+  @media (min-width: $md-up) {
+    width: $md-container;
+  }
+
+  @media (min-width: $lg-up) {
+    width: $lg-container;
+  }
+
+  &__sm-on-md {
+    @media (min-width: $md-up) {
+      width: $sm-container;
     }
   }
-  
-  @media (min-width: 450px) {
-    .container {
-      width: 420px;
+
+  &__md-on-lg {
+    @media (min-width: $lg-up) {
+      width: $md-container;
     }
   }
-  
-  @media (min-width: 650px) {
-    .container {
-      width: 620px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
+
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
   }
 }
 
-.aqua {
-  color: #40E0D0;
-}
 .services__logo, .portfolio__logo, .about__logo, .contacts__logo {
   width: 100%;
   text-align: center;
   height: 230px;
-}
 
-@media screen and (max-width: 990px){
-  .services__logo, .portfolio__logo, .about__logo, .contacts__logo {
+  @media screen and (max-width: 992px){
     width: 100%;
     height: 150px;
   }
+  @media screen and (max-width: 650px){
+    height: 120px;
+  }
 }
+
+
 // .translucent {
 //     font-size: 120px;
 //     font-weight: 900;

@@ -26,7 +26,7 @@ let path = {
     clean: "./" + project_folder + "/"
 }
 
-let { src, dest } = require('gulp'),
+const { src, dest } = require('gulp'),
     gulp = require('gulp'),
     browsersync = require("browser-sync").create(),
     fileinclude = require("gulp-file-include"),
