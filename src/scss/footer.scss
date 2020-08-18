@@ -11,7 +11,7 @@
 .footer__paragraph{
     color: #FFFFFF;
     padding-top: 25px;
-    @media screen and (max-width: 992px){
+    @media screen and (max-width: $md-up){
         font-size: 10px;
         padding-top:30px;
     }

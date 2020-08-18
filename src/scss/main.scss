@@ -26,31 +26,6 @@ $xs-down: 649px;
 $xxs-up: 450px;
 $xxs-down: 449px;
 
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-/*screen sizes*/
-$xl-up: 1400px;
-$xl-down: 1399px;
-
-$lg-up: 1200px;
-$lg-down: 1199px;
-
-$md-up: 992px;
-$md-down: 991px;
-
-$sm-up: 768px;
-$sm-down: 767px;
-
-$xs-up: 650px;
-$xs-down: 649px;
-
-$xxs-up: 450px;
-$xxs-down: 449px;
-
 /*container sizes*/
 $lg-container: 1170px;
 $md-container: 970px;
@@ -59,6 +34,7 @@ $sm-container: 750px;
 $aqua:#40E0D0;
 $grey:#fafafa;
 $blue:#2C4755;
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -101,23 +77,12 @@ $blue:#2C4755;
   text-align: center;
   height: 230px;
 
-  @media screen and (max-width: 992px){
+  @media screen and (max-width: $md-up){
     width: 100%;
     height: 150px;
   }
-  @media screen and (max-width: 650px){
+  @media screen and (max-width: $xs-up){
     height: 120px;
   }
 }
 
-
-// .translucent {
-//     font-size: 120px;
-//     font-weight: 900;
-//     opacity: 0.05;
-//     margin: 20px;
-//     letter-spacing: -6px;
-// }
-// .up {
-//     margin-top: -57px;
-//   }

@@ -20,7 +20,7 @@
         opacity: 0.7;
     }
 
-    @media screen and (max-width: 992px){
+    @media screen and (max-width: $md-up){
       &--big{
         font-size: 90px;
       }
@@ -30,7 +30,7 @@
       }
     }
 
-    @media screen and (max-width: 650px){
+    @media screen and (max-width: $xs-up){
       &--big{
         font-size: 60px;
       }
@@ -52,12 +52,12 @@
     color: $blue;
     opacity: 0.7;
 
-    @media screen and (max-width: 992px){
+    @media screen and (max-width: $md-up){
         font-size: 20px;
         padding: 15px 0px 0px 50px;
     }
 
-    @media screen and (max-width: 650px){
+    @media screen and (max-width: $xs-up){
         font-size: 15px;
     }
 }
@@ -69,12 +69,12 @@
     padding-left: 180px;
     opacity: 0.7;
 
-    @media screen and (max-width: 992px){
+    @media screen and (max-width: $md-up){
         font-size: 15px;
         padding: 15px 0px 0px 50px;
     }
 
-    @media screen and (max-width: 650px){
+    @media screen and (max-width: $xs-up){
         font-size: 12px;
     }
 }
@@ -85,12 +85,12 @@
     opacity: 0.7;
     color: $blue;
 
-    @media screen and (max-width: 992px){
+    @media screen and (max-width: $md-up){
         font-size: 12px;
         padding: 15px 0px 0px 50px;
     }
 
-    @media screen and (max-width: 650px){
+    @media screen and (max-width: $xs-up){
         font-size: 10px;
     }
 }
